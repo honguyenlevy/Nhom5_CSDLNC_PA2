@@ -172,7 +172,7 @@ alter table CT_PHIEUGIAOHANG add
 	constraint FK_CTPHIEUGIAOHANG_PHIEUGIAOHANG 	foreign key (MaPGH) 	references PHIEUGIAOHANG (MaPGH)
 
 alter table PHIEUDATHANG add
-	constraint FK_CTPHIEUDATHANG_NHACUNGCAP 	foreign key (MaNCC) 	references NHACUNGCAP (MaNCC)
+	constraint FK_PHIEUDATHANG_NHACUNGCAP 		foreign key (MaNCC) 	references NHACUNGCAP (MaNCC)
 
 alter table PHIEUGIAOHANG add
 	constraint FK_PHIEUGIAOHANG_PHIEUDATHANG 	foreign key (MaPDH) 	references PHIEUDATHANG (MaPDH)
