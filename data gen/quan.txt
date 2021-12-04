@@ -1,0 +1,56 @@
+Tân Phú
+Tân Bình
+Phú Nhuận
+Gò Vấp
+Bình Thạnh
+Bình Tân
+Bắc Từ Liêm
+Ba Đình
+Cầu Giấy
+Hai Bà Trưng
+Hà Đông
+Hoàn Kiếm
+Hoàng Mai
+Long Biên
+Nam Từ Liêm
+Tây Hồ
+Thanh Xuân
+Đống Đa
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Quận Bình Thủy
+Quận Cái Răng
+Quận Ninh Kiều
+Quận Ô Môn
+Quận Thốt Nốt
+Huyện Cờ Đỏ
+Huyện Phong Điền
+Huyện Thới Lai
+Huyện Vĩnh Thạnh
+Quận Hải Châu
+Quận Cẩm Lệ
+Quận Thanh Khê
+Quận Liên Chiểu
+Quận Ngũ Hành Sơn
+Quận Sơn Trà
+Huyện Hòa Vang
+Huyện Hoàng Sa
+Huyện Giao Thủy
+Huyện Hải Hậu
+Huyện Mỹ Lộc
+Huyện Nam Trực
+Huyện Nghĩa Hưng
+Huyện Trực Ninh
+Huyện Vụ Bản
+Huyện Xuân Trường
+Huyện Ý Yên
