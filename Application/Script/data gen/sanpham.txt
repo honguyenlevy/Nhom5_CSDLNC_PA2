@@ -87,7 +87,8 @@ Chén
 Đĩa
 Muỗng
 Bình tập bé ăn
-Bình ủ sữa, giữ nhiệt
+Bình ủ sữa
+Bình giữ nhiệt
 Ly uống nước
 Yếm ăn cho bé
 Dụng cụ nấu ăn
@@ -112,7 +113,8 @@ Giày sơ sinh
 Quần áo ra ngoài
 Thời trang sơ sinh
 Phụ kiện thời trang
-Ba lô, túi xách
+Ba lô
+Túi xách
 Giày dép, sandal
 Quần áo mặc nhà
 Quần áo mặc ngủ
@@ -120,35 +122,39 @@ Thời trang sơ sinh
 Quần áo ra ngoài
 Phụ kiện thời trang
 Quần áo mặc nhà
-Túi xách, balo
 Quần áo mặc ngủ
-Học tập, mỹ thuật
+Học tập
+Dụng cụ mỹ thuật
 Thế giới thú bông
 Đồ chơi nhập vai
-Kỹ năng, đời sống
+Dụng cụ kỹ năng, đời sống
 Lắp ráp, xếp hình
 Đồ chơi cát nước
 Thế giới búp bê
 Thế giới động vật
-Xe lắc, chòi chân
-Robot, xe các loại
-Học tập, mỹ thuật
-Kỹ năng, đời sống
+Xe lắc
+Chòi chân
+Xe các loại
+Robot các loại
 Thế giới thú́ bông
 Lắp ráp, xếp hình
 Đồ chơi cát nước
 Đồ chơi nhập vai
 Thế giới động vật
-Tập tô, bóc dán
-Phát triển kỹ năng
-Tương tác, học chơi
-Bút vẽ, màu tô
+Tập tô
+Bóc dán
+Dụng cụ phát triển kỹ năng
+Dụng cụ tương tác, học chơi
+Bút vẽ
+Màu tô
 Dụng cụ học tập
 Thế giới thú bông
 Ngậm nướu cho bé
 Đồ chơi tổng hợp
-Lục lạc, xúc xắc
-Treo nôi, kệ chữ A
+Lục lạc
+Xúc xắc
+Treo nôi
+Kệ chữ A
 Chút chít, nhà tắm
 Thảm chơi các loại
 Đồ chơi treo nôi
