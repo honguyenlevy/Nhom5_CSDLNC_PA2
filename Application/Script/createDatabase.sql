@@ -45,6 +45,7 @@ create table HOADON
 	NgayMua date,
 	TongTien bigint,
 	YeuCauGiao nvarchar(10),
+	PhiVanChuyen bigint,
 	MaHTTT nvarchar(10),
 	MaNV nvarchar(10),
 	MaKH nvarchar(10)
@@ -66,7 +67,6 @@ create table DONGH_KHACH
 (
 	MaDGHK nvarchar(10),
 	DiaChiGiaoHang nvarchar(150),
-	PhiVanChuyen bigint,
 	TinhTrangGiao nvarchar(50),
 	MaHD nvarchar(10),
 	MaNVGH nvarchar(10)
@@ -144,35 +144,35 @@ create table CT_PHIEUGIAOHANG
 )
 
 alter table NHANVIEN add
-	constraint FK_NHANVIEN_CHINHANH   foreign key (MaCN)  references CHINHANH (MaCN)
+	constraint FK_NHANVIEN_CHINHANH foreign key (MaCN) references CHINHANH (MaCN)
 
 alter table HOADON add
-	constraint FK_HOADON_NHANVIEN 		foreign key (MaNV) 	  references NHANVIEN (MaNV),
+	constraint FK_HOADON_NHANVIEN 		foreign key (MaNV) 	references NHANVIEN (MaNV),
 	constraint FK_HOADON_HTTHANHTOAN	foreign key (MaHTTT) 	references HTTHANHTOAN (MaHTTT),
-	constraint FK_HOADON_KHACHHANG 		foreign key (MaKH) 	  references KHACHHANG (MaKH)
+	constraint FK_HOADON_KHACHHANG 		foreign key (MaKH) 	references KHACHHANG (MaKH)
 
 alter table DONGH_KHACH add
-	constraint FK_DONGHKHACH_HOADON 	    foreign key (MaHD) 	  references HOADON (MaHD),
+	constraint FK_DONGHKHACH_HOADON 	foreign key (MaHD) 	references HOADON (MaHD),
 	constraint FK_DONGHKHACH_NVGIAOHANG 	foreign key (MaNVGH) 	references NV_GIAOHANG (MaNVGH)
 
 alter table CUNGCAP_SP add
 	constraint FK_CUNGCAPSP_NHACUNGCAP	foreign key (MaNCC) 	references NHACUNGCAP (MaNCC),
-	constraint FK_CUNGCAPSP_SANPHAM 	  foreign key (MaSP)  	references SANPHAM (MaSP)
+	constraint FK_CUNGCAPSP_SANPHAM 	foreign key (MaSP) 	references SANPHAM (MaSP)
 
 alter table CT_HOADON add
 	constraint FK_CTHOADON_HOADON 	foreign key (MaHD) 	references HOADON (MaHD),
 	constraint FK_CTHOADON_SANPHAM  foreign key (MaSP) 	references SANPHAM (MaSP)
 
 alter table CT_PHIEUDATHANG add
-	constraint FK_CTPHIEUDATHANG_SANPHAM 		    foreign key (MaSP) 	    references SANPHAM (MaSP),
-	constraint FK_CTPHIEUDATHANG_PHIEUDATHANG 	foreign key (MaPDH) 	  references PHIEUDATHANG (MaPDH)
+	constraint FK_CTPHIEUDATHANG_SANPHAM 		foreign key (MaSP) 	references SANPHAM (MaSP),
+	constraint FK_CTPHIEUDATHANG_PHIEUDATHANG 	foreign key (MaPDH) 	references PHIEUDATHANG (MaPDH)
 
 alter table CT_PHIEUGIAOHANG add
-	constraint FK_CTPHIEUGIAOHANG_SANPHAM 		    foreign key (MaSP) 	  references SANPHAM (MaSP),
+	constraint FK_CTPHIEUGIAOHANG_SANPHAM 		foreign key (MaSP) 	references SANPHAM (MaSP),
 	constraint FK_CTPHIEUGIAOHANG_PHIEUGIAOHANG 	foreign key (MaPGH) 	references PHIEUGIAOHANG (MaPGH)
 
 alter table PHIEUDATHANG add
-	constraint FK_PHIEUDATHANG_NHACUNGCAP 		foreign key (MaNCC) 	references NHACUNGCAP (MaNCC)
+	constraint FK_PHIEUDATHANG_NHACUNGCAP 	foreign key (MaNCC) 	references NHACUNGCAP (MaNCC)
 
 alter table PHIEUGIAOHANG add
 	constraint FK_PHIEUGIAOHANG_PHIEUDATHANG 	foreign key (MaPDH) 	references PHIEUDATHANG (MaPDH)
