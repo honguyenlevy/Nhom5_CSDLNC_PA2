@@ -1,18 +1,14 @@
 Sữa bột cao cấp
 Bỉm Tã
 Sữa tươi
-Bột
-Bánh ăn dặm
-Cháo
-Mì
-Nước sốt
+Bột, bánh ăn dặm
+Cháo, mì, nước sốt
 Gia vị chế biến
 Dinh dưỡng đóng lọ
 Sữa cho mẹ bầu
 Thực phẩm cho mẹ
 Thức ăn nghiền
-Bánh dinh dưỡng
-Kẹo dinh dưỡng
+Bánh, kẹo dinh dưỡng
 Phô mai váng sữa
 Vitamin cho bé
 Men vi sinh
@@ -23,80 +19,53 @@ Núm ty các loại
 Cọ rửa, giá úp
 Ngậm nướu cho bé
 Dụng cụ chia sữa
-Chăn
-Gối
-Màn chụp
-Nôi
-Cũi
-Bộ quây
-Bộ ga
-Nệm
+Chăn, gối, màn chụp
+Nôi, cũi, bộ quây
+Bộ ga, gối, nệm
 Máy đưa võng
 Sữa cho mẹ bầu
 Đồ dùng chăm bé
 Tắm, gội các loại
 Thực phẩm cho mẹ
-Băng vệ sinh
-Condom
-Đầm bầu
-Đồ lót
+Băng vệ sinh, condom
+Đầm bầu, đồ lót
 Khăn ướt các loại
 Khăn ướt bột giấy
 Khăn giấy các loạ̣i
-Khăn khô
-Khăn giấy
+Khăn khô, khăn giấy
 Túi trữ sữa
 Ty ngậm cho bé
-Khăn gạc
-Khăn tắm
+Khăn gạc, khăn tắm
 Vệ sinh cơ thể
-Kem 
-Bàn chải
-Thau
-Ghế
-Nón tắm
+Kem, bàn chải
+Thau, ghế, nón tắm
 Tấm lót chống thấm
-Bô
-Lót bồn cầu
-Cắt Tóc
-Bấm móng
-Móc phơi
-Đồ nhựa
+Bô, lót bồn cầu
+Cắt Tóc, bấm móng
+Móc phơi, đồ nhựa
 Xe đẩy em bé
 Xe tập đi
 Địu em bé
-Scooter
-Đai
-Gối đi xe
-Xe lắc
-Chòi chân
-Xe đạp
-Xe 3 bánh
+Scooter, vận động
+Đai, gối đi xe
+Xe lắc, chòi chân
+Xe đạp, xe 3 bánh
 Ghế ngồi xe hơi
-Tắm gội
-Vệ sinh
-Máy hâm
-Tiệt trùng
+Tắm gội, vệ sinh
+Máy hâm, tiệt trùng
 Máy hút sữa
 Mỹ phẩm cho mẹ
 Bình nước cho bé
-Ghế nằm
-Ngồi ăn
-Tô
-Chén
-Đĩa
-Muỗng
+Ghế nằm, ngồi ăn
+Tô, chén, đĩa, muỗng
 Bình tập bé ăn
-Bình ủ sữa
-Bình giữ nhiệt
+Bình ủ sữa, giữ nhiệt
 Ly uống nước
 Yếm ăn cho bé
 Dụng cụ nấu ăn
 Miếng lót thấm sữa
-Nhiệt kế
-Huyết áp
-Dầu nóng
-Khuynh diệp
+Nhiệt kế, huyết áp
+Dầu nóng, khuynh diệp
 Khẩu trang bảo vệ
 Hút mũi, uống thuốc
 Trị muỗi, côn trùng
@@ -113,8 +82,7 @@ Giày sơ sinh
 Quần áo ra ngoài
 Thời trang sơ sinh
 Phụ kiện thời trang
-Ba lô
-Túi xách
+Ba lô, túi xách
 Giày dép, sandal
 Quần áo mặc nhà
 Quần áo mặc ngủ
@@ -122,39 +90,36 @@ Thời trang sơ sinh
 Quần áo ra ngoài
 Phụ kiện thời trang
 Quần áo mặc nhà
+Túi xách, balo
+Giày dép, sandal
 Quần áo mặc ngủ
-Học tập
-Dụng cụ mỹ thuật
+Học tập, mỹ thuật
 Thế giới thú bông
 Đồ chơi nhập vai
-Dụng cụ kỹ năng, đời sống
+Kỹ năng, đời sống
 Lắp ráp, xếp hình
 Đồ chơi cát nước
 Thế giới búp bê
 Thế giới động vật
-Xe lắc
-Chòi chân
-Xe các loại
-Robot các loại
+Xe lắc, chòi chân
+Robot, xe các loại
+Học tập, mỹ thuật
+Kỹ năng, đời sống
 Thế giới thú́ bông
 Lắp ráp, xếp hình
 Đồ chơi cát nước
 Đồ chơi nhập vai
 Thế giới động vật
-Tập tô
-Bóc dán
-Dụng cụ phát triển kỹ năng
-Dụng cụ tương tác, học chơi
-Bút vẽ
-Màu tô
+Tập tô, bóc dán
+Phát triển kỹ năng
+Tương tác, học chơi
+Bút vẽ, màu tô
 Dụng cụ học tập
 Thế giới thú bông
 Ngậm nướu cho bé
 Đồ chơi tổng hợp
-Lục lạc
-Xúc xắc
-Treo nôi
-Kệ chữ A
+Lục lạc, xúc xắc
+Treo nôi, kệ chữ A
 Chút chít, nhà tắm
 Thảm chơi các loại
 Đồ chơi treo nôi
