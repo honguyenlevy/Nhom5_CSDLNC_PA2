@@ -37,7 +37,6 @@
 				35000,
 				@MAHTTT,
 				NULL,
-				NULL,
 				@MAKH
 			)
 			--thêm mới chi tiết đơn hàng
