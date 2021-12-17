@@ -44,29 +44,6 @@ begin
 end
 go
 
-alter trigger trigger_PhiVanChuyen
-on HOADON 
-for insert, delete, update	as
-begin
-	if exists (select YeuCauGiao from HOADON where YeuCauGiao = N'Không') 
-	begin
-		update HoaDon 
-		set PhiVanChuyen = 0
-		where 
-			exists (select * from deleted d	 where d.MaHD = HoaDon.MaHD) or
-			exists (select * from inserted i where i.MaHD = HoaDon.MaHD) 
-	end
-	else
-	begin
-		update HoaDon 
-		set PhiVanChuyen = 35000
-		where 
-			exists (select * from deleted d	 where d.MaHD = HoaDon.MaHD) or
-			exists (select * from inserted i where i.MaHD = HoaDon.MaHD) 
-	end
-end
-go
-
 create trigger trigger_DonGia
 on CT_PHIEUDATHANG
 for insert, update, delete	as
@@ -94,9 +71,6 @@ go
 
 delete from CT_HOADON where MaHD = 'HD000009' and MaSP = 'SP205768'
 insert into	CT_HOADON(MaHD, MaSP, SoLuong, ThanhTien) values (N'HD000009', N'SP205768', 5, 0)
-
-delete from HOADON where MaHD = 'HD000001'
-insert into HOADON(MaHD, NgayMua, TongTien, YeuCauGiao, PhiVanChuyen, MaHTTT, MaNV, MaKH) values ('HD000001', '2020-05-19', 0, N'Không', 0, 'HTTT1', 'NV297717', 'KH150692')
 
 delete from CT_PHIEUDATHANG where MaPDH = 'PDH000111' and MaSP = 'SP166908'
 insert into CT_PHIEUDATHANG(MaPDH, MaSP, SoLuongDH, DonGia) values ('PDH000111', 'SP166908', 10, 0)
