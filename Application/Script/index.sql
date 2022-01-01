@@ -2,30 +2,27 @@
 go
 
 --Index
---Khách hàng có nhu cầu tìm kiếm các sản phẩm thông qua tên sản phẩm nên tần suất truy xuất vào tên sản phẩm rất cao
+--Khách hàng có nhu cầu tìm kiếm các sản phẩm thông qua tên sản phẩm 
+-- Tần suất truy vấn: Trung bình 1000 lần/giờ
+--					  Cao diểm 5000 lần/giờ
 set statistics io on
 set statistics time on
 select * from SANPHAM where TenSP = N'Màn chụp'
 
 CREATE INDEX index_TenSP on SANPHAM(TenSP)
 
-set statistics io on
-set statistics time on
-select * from SANPHAM where TenSP = N'Màn chụp'
-
---Khách hàng thường xuyên xem hóa đơn của mình nên tần xuất truy suất vào 2 thuộc tính MaHD và NgayMua rất cao
+--Khách hàng thường xuyên xem hóa đơn của mình
+-- Tần suất truy vấn: Trung bình 500 lần/giờ
+--					  Cao diểm 1000 lần/giờ
 set statistics io on
 set statistics time on
 select * from HOADON where NgayMua = '2021-04-13'
 
 CREATE INDEX index_MaHD_NGayMua on HoaDon(MaHD, NgayMua)
 
-set statistics io on
-set statistics time on
-select * from HOADON where NgayMua = '2021-04-13'
-
 --Khi nhân viên nhập hóa đơn, nhân viên sẽ tìm mã khách hàng thông qua Số điện thoại để nhập vào hóa đơn
--- ->tần suất truy xuất vào thuộc tính MaKH, SoDienThoai trong bảng KHACHHANG rât cao
+-- Tần suất truy vấn: Trung bình 1000 lần/giờ
+--					  Cao diểm 5000 lần/giờ
 set statistics io on
 set statistics time on
 select * from KHACHHANG where SoDienThoai = '07624163634'
@@ -33,41 +30,32 @@ select * from KHACHHANG where SoDienThoai = '07624163634'
 
 CREATE INDEX index_MaKH_SoDienThoai on KhachHang(MaKH, SoDienThoai)
 
-set statistics io on
-set statistics time on
-select * from KHACHHANG where SoDienThoai = '07624163634'
-
---Thêm sản phẩm vào chi tiết hóa đơn
-set statistics io on
-set statistics time on
-insert into CT_HOADON values ('HD000009','SP205768', '10', '0')
-
-CREATE INDEX index_MaHD_MaSP on CT_HOADON(MaHD, MaSP)
-
-select * from CT_HOADON
-delete from CT_HOADON where MaHD = 'HD000009' and MaSP = 'SP205768'
-
---Xem tình trạng giao hàng 
+--Xem tình trạng giao hàng của đơn hàng
+-- Tần suất truy vấn: Trung bình 2000 lần/giờ
+--					  Cao diểm 5000 lần/giờ
 set statistics io on
 set statistics time on
 select * from DONGH_KHACH where MaHD = 'HD694638'
 
 CREATE INDEX index_MaHD on DONGH_KHACH(MaHD)
 
-set statistics io on
-set statistics time on
-select * from DONGH_KHACH where MaHD = 'HD694638'
-
 --Xem hóa đơn của khách hàng nào
+-- Tần suất truy vấn: Trung bình 100 lần/giờ
+--					  Cao diểm 500 lần/giờ
 set statistics io on
 set statistics time on
 select * from HOADON where MaHD = 'HD000009' and MaKH = 'KH150692'
 
 CREATE INDEX index_MaHD_MaKH on HOADON(MaHD, MaKH)
 
+--Xem số lượng tồn của sản phẩm
+-- Tần suất truy vấn: Trung bình 10 lần/giờ
+--					  Cao diểm 50 lần/giờ
 set statistics io on
 set statistics time on
-select * from HOADON where MaHD = 'HD000009' and MaKH = 'KH150692'
+select MaSP, TenSP, SoLuong from SANPHAM
+
+CREATE INDEX index_MaSP_TenSP_SoLuong on SANPHAM(MaSP,TenSP,SoLuong)
 
 --Đề xuất cải thiện hiệu quả truy xuất truy vấn
 --1. Sử dụng SELECT những trường cần thiết thay vì SELECT 
