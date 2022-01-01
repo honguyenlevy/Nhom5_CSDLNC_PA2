@@ -14,11 +14,11 @@ CREATE INDEX index_TenSP on SANPHAM(TenSP)
 --Khách hàng thường xuyên xem hóa đơn của mình
 -- Tần suất truy vấn: Trung bình 50 lần/giờ
 --					  Cao diểm 100 lần/giờ
-set statistics io on
-set statistics time on
-select * from HOADON where NgayMua = '2021-04-13'
+--set statistics io on
+--set statistics time on
+--select * from HOADON where NgayMua = '2021-04-13'
 
-CREATE INDEX index_MaHD_NGayMua on HoaDon(MaHD, NgayMua)
+--CREATE INDEX index_MaHD_NGayMua on HoaDon(MaHD, NgayMua)
 
 --Khi nhân viên nhập hóa đơn, nhân viên sẽ tìm mã khách hàng thông qua Số điện thoại để nhập vào hóa đơn
 -- Tần suất truy vấn: Trung bình 1000 lần/giờ
