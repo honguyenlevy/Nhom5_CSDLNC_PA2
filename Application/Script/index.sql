@@ -14,11 +14,11 @@ CREATE INDEX index_TenSP on SANPHAM(TenSP)
 --Khách hàng thường xuyên xem hóa đơn của mình
 -- Tần suất truy vấn: Trung bình 50 lần/giờ
 --					  Cao diểm 100 lần/giờ
---set statistics io on
---set statistics time on
---select * from HOADON where NgayMua = '2021-04-13'
+set statistics io on
+set statistics time on
+select * from HOADON where NgayMua = '2021-04-13'
 
---CREATE INDEX index_MaHD_NGayMua on HoaDon(MaHD, NgayMua)
+CREATE INDEX index_MaHD_NGayMua on HoaDon(MaHD, NgayMua)
 
 --Khi nhân viên nhập hóa đơn, nhân viên sẽ tìm mã khách hàng thông qua Số điện thoại để nhập vào hóa đơn
 -- Tần suất truy vấn: Trung bình 1000 lần/giờ
@@ -30,14 +30,14 @@ select * from KHACHHANG where SoDienThoai = '07624163634'
 
 CREATE INDEX index_MaKH_SoDienThoai on KhachHang(MaKH, SoDienThoai)
 
---Xem tình trạng giao hàng của đơn hàng
+--Nhân viên giao hàng xem địa chỉ giao hàng của khách
 -- Tần suất truy vấn: Trung bình 2000 lần/giờ
 --					  Cao diểm 5000 lần/giờ
 set statistics io on
 set statistics time on
-select * from DONGH_KHACH where MaHD = 'HD694638'
+select MaDGHK, DiaChiGiaoHang, MaNVGH from DONGH_KHACH where MaDGHK = 'DHGK000074'
 
-CREATE INDEX index_MaHD on DONGH_KHACH(MaHD)
+CREATE INDEX index_MaDGHK on DONGH_KHACH(MaDGHK)
 
 --Xem hóa đơn của khách hàng nào
 -- Tần suất truy vấn: Trung bình 100 lần/giờ
