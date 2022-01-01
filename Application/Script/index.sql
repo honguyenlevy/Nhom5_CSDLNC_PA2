@@ -12,8 +12,8 @@ select * from SANPHAM where TenSP = N'Màn chụp'
 CREATE INDEX index_TenSP on SANPHAM(TenSP)
 
 --Khách hàng thường xuyên xem hóa đơn của mình
--- Tần suất truy vấn: Trung bình 500 lần/giờ
---					  Cao diểm 1000 lần/giờ
+-- Tần suất truy vấn: Trung bình 50 lần/giờ
+--					  Cao diểm 100 lần/giờ
 set statistics io on
 set statistics time on
 select * from HOADON where NgayMua = '2021-04-13'
