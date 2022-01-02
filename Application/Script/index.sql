@@ -69,6 +69,15 @@ select * from PHIEUGIAOHANG where MaPDH = '9298731'
 
 CREATE INDEX index_MaPDH on PHIEUGIAOHANG(MaPDH)
 
+-- 10. Quản trị xem  thông tin một sản phẩm và các nhà cung cấp của nó
+set statistics io on
+set statistics time on
+
+select sp.*, ncc.*
+from SANPHAM sp, NHACUNGCAP ncc, CUNGCAP_SP cc
+where sp.MaSP = 50
+and ncc.MaNCC = cc.MaNCC
+and cc.MaSP = sp.MaSP
 
 --Đề xuất cải thiện hiệu quả truy xuất truy vấn
 --1. Sử dụng SELECT những trường cần thiết thay vì SELECT 
