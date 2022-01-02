@@ -6,29 +6,29 @@ go
 -- 1. Khách hàng có nhu cầu tìm kiếm giá sản phẩm thông qua tên sản phẩm
 set statistics io on
 set statistics time on
-select GiaSP from SANPHAM where TenSP = N'Màn chụp'
+select GiaSP from SANPHAM where TenSP = N'Đầm bầu 665'
 
-CREATE NONCLUSTERED INDEX index_TenSP on SANPHAM(TenSP)
+--CREATE NONCLUSTERED INDEX index_TenSP on SANPHAM(TenSP)
 
 
 -- 2. Khách hàng xem tổng tiền của hóa đơn
 set statistics io on
 set statistics time on
-select MaHD, TongTien from HOADON where MaHD = 'HD000009'
+select MaHD, TongTien from HOADON where MaHD = '10'
 
-CREATE INDEX index_MaHD on HOADON(MaHD)
+--CREATE INDEX index_MaHD on HOADON(MaHD)
 
--- 3. Nhân viên giao hàng xem địa chỉ giao hàng của khách
+-- 3. Khách hàng xem tình trạng đơn giao hàng
 set statistics io on
 set statistics time on
-select MaDGHK, DiaChiGiaoHang, TinhTrangGiao, MaNVGH from DONGH_KHACH where MaDGHK = 'DHGK000074'
+select MaDGHK, TinhTrangGiao from DONGH_KHACH where MaDGHK = '20'
 
-CREATE INDEX index_MaDGHK on DONGH_KHACH(MaDGHK)
+--CREATE INDEX index_MaDGHK on DONGH_KHACH(MaDGHK)
 
 -- 4. Khi nhân viên nhập hóa đơn, nhân viên sẽ tìm mã khách hàng thông qua Số điện thoại để nhập vào hóa đơn
 set statistics io on
 set statistics time on
-select * from KHACHHANG where SoDienThoai = '07624163634'
+select * from KHACHHANG where SoDienThoai = '09300157622'
 
 
 CREATE INDEX index_SoDienThoai on KhachHang(SoDienThoai)
@@ -36,40 +36,36 @@ CREATE INDEX index_SoDienThoai on KhachHang(SoDienThoai)
 -- 5. Nhân viên giao hàng xem địa chỉ giao hàng của khách dựa trên mã đơn giao
 set statistics io on
 set statistics time on
-select MaDGHK, DiaChiGiaoHang, TinhTrangGiao, MaNVGH from DONGH_KHACH where MaDGHK = 'DHGK000074'
+select MaDGHK, DiaChiGiaoHang from DONGH_KHACH where MaDGHK = '14'
 
 
-CREATE INDEX index_MaDGHK on DONGH_KHACH(MaDGHK)
+--CREATE INDEX index_MaDGHK on DONGH_KHACH(MaDGHK)
 
 -- 6. Nhân viên xem số lượng tồn của của sản phẩm
 set statistics io on
 set statistics time on
 select MaSP, TenSP, SoLuong from SANPHAM
 
-CREATE INDEX index_MaSP on SANPHAM(MaSP,TenSP,SoLuong)
+--CREATE INDEX index_MaSP on SANPHAM(MaSP,TenSP,SoLuong)
 
 -- 7. Quản trị xem các nhân viên ở chi nhánh “A”
--- Tần suất truy vấn: Trung bình 5 lần/giờ
---					  Cao diểm 10 lần/giờ
 set statistics io on
 set statistics time on
-select * from NHANVIEN where MaCN = 'CN511732'
+select * from NHANVIEN where MaCN = '23727'
 
 CREATE INDEX index_MaCN on NHANVIEN(MaCN)
 
 -- 8. Quản trị xem các hóa đơn của ngày nào
--- Tần suất truy vấn: Trung bình 50 lần/giờ
---					  Cao diểm 100 lần/giờ
 set statistics io on
 set statistics time on
-select * from HOADON where NgayMua = '2021-04-13'
+select * from HOADON where NgayMua = '2021-05-07'
 
 CREATE INDEX index_NGayMua on HoaDon(NgayMua)
 
 -- 9.Quản trị xem các phiếu giao hàng của phiếu đặt hàng “A” 
 set statistics io on
 set statistics time on
-select * from PHIEUGIAOHANG where MaPDH = 'PDH506147'
+select * from PHIEUGIAOHANG where MaPDH = '9298731'
 
 CREATE INDEX index_MaPDH on PHIEUGIAOHANG(MaPDH)
 
