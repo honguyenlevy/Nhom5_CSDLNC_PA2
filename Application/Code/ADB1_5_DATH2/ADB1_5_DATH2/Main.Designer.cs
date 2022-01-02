@@ -29,6 +29,7 @@ namespace ADB1_5_DATH2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnKhachHang = new System.Windows.Forms.Button();
@@ -208,8 +209,9 @@ namespace ADB1_5_DATH2
             this.Controls.Add(this.btnNhanVien);
             this.Controls.Add(this.btnKhachHang);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

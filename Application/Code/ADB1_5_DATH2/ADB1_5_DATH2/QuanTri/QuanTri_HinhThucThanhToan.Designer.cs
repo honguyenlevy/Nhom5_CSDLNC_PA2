@@ -33,6 +33,7 @@ namespace ADB1_5_DATH2.QuanTri
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.buttonCapNhat = new System.Windows.Forms.Button();
             this.comboBoxMaHTTT = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@ namespace ADB1_5_DATH2.QuanTri
             this.panel3 = new System.Windows.Forms.Panel();
             this.buttonXem = new System.Windows.Forms.Button();
             this.dataGridViewXemHTTT = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -98,7 +98,19 @@ namespace ADB1_5_DATH2.QuanTri
             this.groupBox2.Size = new System.Drawing.Size(486, 266);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cập nhật thông tin chi nhánh";
+            this.groupBox2.Text = "Cập nhật thông tin hình thức thanh toán";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.Location = new System.Drawing.Point(26, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(228, 25);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Tên hình thức thanh toán";
             // 
             // buttonCapNhat
             // 
@@ -155,7 +167,7 @@ namespace ADB1_5_DATH2.QuanTri
             this.groupBox1.Size = new System.Drawing.Size(486, 252);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thêm chi nhánh";
+            this.groupBox1.Text = "Thêm hình thức thanh toán";
             // 
             // buttonThemHTTT
             // 
@@ -223,18 +235,6 @@ namespace ADB1_5_DATH2.QuanTri
             this.dataGridViewXemHTTT.RowTemplate.Height = 24;
             this.dataGridViewXemHTTT.Size = new System.Drawing.Size(478, 453);
             this.dataGridViewXemHTTT.TabIndex = 21;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(26, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 25);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Tên hình thức thanh toán";
             // 
             // QuanTri_HinhThucThanhToan
             // 

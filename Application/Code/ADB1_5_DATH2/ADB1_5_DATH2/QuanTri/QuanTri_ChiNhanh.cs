@@ -58,7 +58,7 @@ namespace ADB1_5_DATH2.QuanTri
             comboBoxMaCN.SelectedIndex = -1;
 
             Them_textBoxDiaChiCN.Text = "";
-            Them_textBoxDiaChiCN.Text = "";
+            Them_textBoxSDT.Text = "";
         }
 
         private void comboBoxMaCN_SelectedIndexChanged(object sender, EventArgs e)

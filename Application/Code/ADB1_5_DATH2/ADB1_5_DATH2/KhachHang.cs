@@ -75,7 +75,7 @@ namespace ADB1_5_DATH2
                 return;
             }
             string query = "KH_DAT_HANG N'" + dateTimeNgayMua.Text + "', N'" + comboBoxMaKH.SelectedValue + "', N'" + comboBoxHTTT.SelectedValue + "', N'" + textBoxDiaChiGH.Text + "'";
-            Function.RunSQL(query);
+            //Function.RunSQL(query);
             sql = Function.GetFieldValues(query);
             MessageBox.Show("Bạn đã thêm hóa đơn thành công, bây giờ hãy chọn sản phẩm nha!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -142,6 +142,7 @@ namespace ADB1_5_DATH2
 
         private void buttonDatHang_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Bạn đặt hàng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             comboBoxMaKH.Text = "";
             textBoxDiaChiGH.Text = "";
             comboBoxHTTT.Text = "";

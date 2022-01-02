@@ -78,7 +78,7 @@ namespace ADB1_5_DATH2.QuanTri
                 Them_textBoxMoTa.Focus();
                 return;
             }
-            string query = "QT_THEM_SP N'" + Them_textBoxTenSP.Text + "', N'" + Them_textBoxGiaSP.Text + "', N'"+Them_textBoxSoLuong.Text+"', N'"+Them_textBoxMoTa+"'";
+            string query = "QT_THEM_SP N'" + Them_textBoxTenSP.Text + "', N'" + Them_textBoxGiaSP.Text + "', N'"+Them_textBoxSoLuong.Text+"', N'"+Them_textBoxMoTa.Text+"'";
             MessageBox.Show("Thêm sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             DataSet data = new DataSet();
             sql = Function.GetFieldValues(query);
