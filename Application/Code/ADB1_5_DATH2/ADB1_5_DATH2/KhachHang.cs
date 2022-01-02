@@ -151,5 +151,19 @@ namespace ADB1_5_DATH2
             dataGridViewXemTimSP.DataSource = "";
             dataGridViewCTDH.DataSource = "";
         }
+
+        private void buttonXemDGH_Click(object sender, EventArgs e)
+        {
+            if (comboBoxMaKH.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn mã khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBoxMaKH.Focus();
+                return;
+            }
+            string query = "KH_XEM_DGH N'" + comboBoxMaKH.SelectedValue + "'";
+            KhachHangXemDonGiaoHang frm = new KhachHangXemDonGiaoHang(query);
+            frm.ShowDialog();
+
+        }
     }
 }

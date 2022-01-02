@@ -19,3 +19,7 @@ D:\HTTT\Nhom5_CSDLNC_PA2\Application\Code\ADB1_5_DATH2\ADB1_5_DATH2\obj\Debug\AD
 D:\HTTT\Nhom5_CSDLNC_PA2\Application\Code\ADB1_5_DATH2\ADB1_5_DATH2\obj\Debug\ADB1_5_DATH2.QuanTri.QuanTri_NhaCungCap.resources
 D:\HTTT\Nhom5_CSDLNC_PA2\Application\Code\ADB1_5_DATH2\ADB1_5_DATH2\obj\Debug\ADB1_5_DATH2.QuanTri.QuanTri_NhanVien.resources
 D:\HTTT\Nhom5_CSDLNC_PA2\Application\Code\ADB1_5_DATH2\ADB1_5_DATH2\obj\Debug\ADB1_5_DATH2.QuanTri.QuanTri_KiemTra.resources
+D:\HTTT\Nhom5_CSDLNC_PA2\Application\Code\ADB1_5_DATH2\ADB1_5_DATH2\obj\Debug\ADB1_5_DATH2.QuanTri.QuanTri_NhanVienGiaoHang.resources
+D:\HTTT\Nhom5_CSDLNC_PA2\Application\Code\ADB1_5_DATH2\ADB1_5_DATH2\obj\Debug\ADB1_5_DATH2.QuanTri.QuanTri_PhieuDatHang.resources
+D:\HTTT\Nhom5_CSDLNC_PA2\Application\Code\ADB1_5_DATH2\ADB1_5_DATH2\obj\Debug\ADB1_5_DATH2.KhachHangXemDonGiaoHang.resources
+D:\HTTT\Nhom5_CSDLNC_PA2\Application\Code\ADB1_5_DATH2\ADB1_5_DATH2\obj\Debug\ADB1_5_DATH2.QuanTri.QuanTri_XemPhieuGiaoHang.resources

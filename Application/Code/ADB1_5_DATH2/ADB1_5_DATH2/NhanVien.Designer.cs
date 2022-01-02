@@ -231,6 +231,7 @@ namespace ADB1_5_DATH2
             this.comboBoxMaSP.Name = "comboBoxMaSP";
             this.comboBoxMaSP.Size = new System.Drawing.Size(170, 33);
             this.comboBoxMaSP.TabIndex = 19;
+            this.comboBoxMaSP.SelectedIndexChanged += new System.EventHandler(this.comboBoxMaSP_SelectedIndexChanged);
             // 
             // label9
             // 

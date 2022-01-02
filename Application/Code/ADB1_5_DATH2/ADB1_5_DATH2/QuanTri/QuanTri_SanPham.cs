@@ -23,6 +23,9 @@ namespace ADB1_5_DATH2.QuanTri
         {
             Function.FillCombo("SELECT MaSP FROM SANPHAM", comboBoxMaSP, "MaSP", "MaSP");
             comboBoxMaSP.SelectedIndex = -1;
+
+            Function.FillCombo("SELECT MaSP FROM SANPHAM", comboBoxNCC_MaSP, "MaSP", "MaSP");
+            comboBoxNCC_MaSP.SelectedIndex = -1;
         }
 
         private void comboBoxMaSP_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,6 +96,12 @@ namespace ADB1_5_DATH2.QuanTri
             Them_textBoxMoTa.Text = "";
             Them_textBoxSoLuong.Text = "";
             Them_textBoxTenSP.Text = "";
+
+            Function.FillCombo("SELECT MaSP FROM SANPHAM", comboBoxMaSP, "MaSP", "MaSP");
+            comboBoxMaSP.SelectedIndex = -1;
+
+            Function.FillCombo("SELECT MaSP FROM SANPHAM", comboBoxNCC_MaSP, "MaSP", "MaSP");
+            comboBoxNCC_MaSP.SelectedIndex = -1;
         }
 
         private void buttonCapNhat_Click(object sender, EventArgs e)
@@ -161,6 +170,27 @@ namespace ADB1_5_DATH2.QuanTri
                 connection.Close();
             }
             dataGridViewXemTimSP.DataSource = data.Tables[0];
+        }
+
+        private void buttonXemSPNCC_Click(object sender, EventArgs e)
+        {
+            if (comboBoxNCC_MaSP.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải chọn mã sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBoxNCC_MaSP.Focus();
+                return;
+            }
+            string query = "QT_XEM_NCC_SP N'" + comboBoxNCC_MaSP.SelectedValue + "'";
+            Function.RunSQL(query);
+            DataSet data = new DataSet();
+            using (SqlConnection connection = new SqlConnection(Connection.connectionString))
+            {
+                connection.Open();
+                SqlDataAdapter dap = new SqlDataAdapter(query, connection);
+                dap.Fill(data);
+                connection.Close();
+            }
+            dataGridViewSP_NCC.DataSource = data.Tables[0];
         }
     }
 }

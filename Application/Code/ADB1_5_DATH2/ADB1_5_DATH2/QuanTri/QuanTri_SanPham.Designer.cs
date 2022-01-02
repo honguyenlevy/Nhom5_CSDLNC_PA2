@@ -57,12 +57,21 @@ namespace ADB1_5_DATH2.QuanTri
             this.panel3 = new System.Windows.Forms.Panel();
             this.buttonXem = new System.Windows.Forms.Button();
             this.dataGridViewXemTimSP = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonXemSPNCC = new System.Windows.Forms.Button();
+            this.dataGridViewSP_NCC = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBoxNCC_MaSP = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXemTimSP)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSP_NCC)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -229,9 +238,9 @@ namespace ADB1_5_DATH2.QuanTri
             this.label6.ForeColor = System.Drawing.Color.Navy;
             this.label6.Location = new System.Drawing.Point(69, 48);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 25);
+            this.label6.Size = new System.Drawing.Size(131, 25);
             this.label6.TabIndex = 21;
-            this.label6.Text = "Mã chi nhánh";
+            this.label6.Text = "Mã sản phẩm";
             // 
             // groupBox1
             // 
@@ -348,8 +357,8 @@ namespace ADB1_5_DATH2.QuanTri
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.buttonXem);
-            this.panel3.Controls.Add(this.dataGridViewXemTimSP);
+            this.panel3.Controls.Add(this.groupBox4);
+            this.panel3.Controls.Add(this.groupBox3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(486, 100);
             this.panel3.Name = "panel3";
@@ -361,11 +370,11 @@ namespace ADB1_5_DATH2.QuanTri
             this.buttonXem.BackColor = System.Drawing.Color.SkyBlue;
             this.buttonXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXem.ForeColor = System.Drawing.Color.Navy;
-            this.buttonXem.Location = new System.Drawing.Point(77, 16);
+            this.buttonXem.Location = new System.Drawing.Point(386, 18);
             this.buttonXem.Name = "buttonXem";
-            this.buttonXem.Size = new System.Drawing.Size(328, 46);
+            this.buttonXem.Size = new System.Drawing.Size(92, 46);
             this.buttonXem.TabIndex = 24;
-            this.buttonXem.Text = "Xem danh sách chi nhánh";
+            this.buttonXem.Text = "Xem ";
             this.buttonXem.UseVisualStyleBackColor = false;
             this.buttonXem.Click += new System.EventHandler(this.buttonXem_Click);
             // 
@@ -373,12 +382,83 @@ namespace ADB1_5_DATH2.QuanTri
             // 
             this.dataGridViewXemTimSP.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridViewXemTimSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewXemTimSP.Location = new System.Drawing.Point(6, 68);
+            this.dataGridViewXemTimSP.Location = new System.Drawing.Point(0, 70);
             this.dataGridViewXemTimSP.Name = "dataGridViewXemTimSP";
             this.dataGridViewXemTimSP.RowHeadersWidth = 51;
             this.dataGridViewXemTimSP.RowTemplate.Height = 24;
-            this.dataGridViewXemTimSP.Size = new System.Drawing.Size(478, 453);
+            this.dataGridViewXemTimSP.Size = new System.Drawing.Size(478, 171);
             this.dataGridViewXemTimSP.TabIndex = 21;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.buttonXem);
+            this.groupBox3.Controls.Add(this.dataGridViewXemTimSP);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(6, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(490, 241);
+            this.groupBox3.TabIndex = 25;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Xem danh sách sản phẩm";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.comboBoxNCC_MaSP);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.buttonXemSPNCC);
+            this.groupBox4.Controls.Add(this.dataGridViewSP_NCC);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(3, 270);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(490, 251);
+            this.groupBox4.TabIndex = 26;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Xem nhà cung cấp sản phẩm";
+            // 
+            // buttonXemSPNCC
+            // 
+            this.buttonXemSPNCC.BackColor = System.Drawing.Color.SkyBlue;
+            this.buttonXemSPNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXemSPNCC.ForeColor = System.Drawing.Color.Navy;
+            this.buttonXemSPNCC.Location = new System.Drawing.Point(389, 23);
+            this.buttonXemSPNCC.Name = "buttonXemSPNCC";
+            this.buttonXemSPNCC.Size = new System.Drawing.Size(92, 46);
+            this.buttonXemSPNCC.TabIndex = 24;
+            this.buttonXemSPNCC.Text = "Xem ";
+            this.buttonXemSPNCC.UseVisualStyleBackColor = false;
+            this.buttonXemSPNCC.Click += new System.EventHandler(this.buttonXemSPNCC_Click);
+            // 
+            // dataGridViewSP_NCC
+            // 
+            this.dataGridViewSP_NCC.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dataGridViewSP_NCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSP_NCC.Location = new System.Drawing.Point(3, 80);
+            this.dataGridViewSP_NCC.Name = "dataGridViewSP_NCC";
+            this.dataGridViewSP_NCC.RowHeadersWidth = 51;
+            this.dataGridViewSP_NCC.RowTemplate.Height = 24;
+            this.dataGridViewSP_NCC.Size = new System.Drawing.Size(478, 160);
+            this.dataGridViewSP_NCC.TabIndex = 21;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Navy;
+            this.label11.Location = new System.Drawing.Point(6, 39);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(131, 25);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Mã sản phẩm";
+            // 
+            // comboBoxNCC_MaSP
+            // 
+            this.comboBoxNCC_MaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxNCC_MaSP.FormattingEnabled = true;
+            this.comboBoxNCC_MaSP.Location = new System.Drawing.Point(159, 36);
+            this.comboBoxNCC_MaSP.Name = "comboBoxNCC_MaSP";
+            this.comboBoxNCC_MaSP.Size = new System.Drawing.Size(170, 33);
+            this.comboBoxNCC_MaSP.TabIndex = 26;
             // 
             // QuanTri_KiemTraSanPham
             // 
@@ -400,6 +480,10 @@ namespace ADB1_5_DATH2.QuanTri
             this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXemTimSP)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSP_NCC)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -434,5 +518,11 @@ namespace ADB1_5_DATH2.QuanTri
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button buttonXem;
         private System.Windows.Forms.DataGridView dataGridViewXemTimSP;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox comboBoxNCC_MaSP;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button buttonXemSPNCC;
+        private System.Windows.Forms.DataGridView dataGridViewSP_NCC;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

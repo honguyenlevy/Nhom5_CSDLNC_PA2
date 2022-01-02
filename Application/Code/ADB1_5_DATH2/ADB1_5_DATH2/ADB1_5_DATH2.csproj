@@ -54,6 +54,12 @@
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhachHangXemDonGiaoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHangXemDonGiaoHang.Designer.cs">
+      <DependentUpon>KhachHangXemDonGiaoHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,8 +140,17 @@
     <Compile Include="QuanTri\QuanTri_KiemTra.Designer.cs">
       <DependentUpon>QuanTri_KiemTra.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanTri\QuanTri_XemPhieuGiaoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTri\QuanTri_XemPhieuGiaoHang.Designer.cs">
+      <DependentUpon>QuanTri_XemPhieuGiaoHang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHangXemDonGiaoHang.resx">
+      <DependentUpon>KhachHangXemDonGiaoHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -174,11 +189,20 @@
     <EmbeddedResource Include="QuanTri\QuanTri_NhanVien.resx">
       <DependentUpon>QuanTri_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanTri\QuanTri_NhanVienGiaoHang.resx">
+      <DependentUpon>QuanTri_NhanVienGiaoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTri\QuanTri_PhieuDatHang.resx">
+      <DependentUpon>QuanTri_PhieuDatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanTri\QuanTri_SanPham.resx">
       <DependentUpon>QuanTri_SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanTri\QuanTri_KiemTra.resx">
       <DependentUpon>QuanTri_KiemTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTri\QuanTri_XemPhieuGiaoHang.resx">
+      <DependentUpon>QuanTri_XemPhieuGiaoHang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

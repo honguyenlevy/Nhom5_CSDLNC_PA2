@@ -158,5 +158,10 @@ namespace ADB1_5_DATH2
             dataGridViewXemTimSP.DataSource = "";
             dataGridViewCTDH.DataSource = "";
         }
+
+        private void comboBoxMaSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

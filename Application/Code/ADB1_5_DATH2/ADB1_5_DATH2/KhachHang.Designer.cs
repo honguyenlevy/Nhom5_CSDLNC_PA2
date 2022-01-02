@@ -57,6 +57,7 @@ namespace ADB1_5_DATH2
             this.buttonTimKiem = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonThemSP = new System.Windows.Forms.Button();
+            this.buttonXemDGH = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -302,7 +303,7 @@ namespace ADB1_5_DATH2
             this.buttonDatHang.BackColor = System.Drawing.Color.SkyBlue;
             this.buttonDatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDatHang.ForeColor = System.Drawing.Color.Navy;
-            this.buttonDatHang.Location = new System.Drawing.Point(321, 24);
+            this.buttonDatHang.Location = new System.Drawing.Point(407, 24);
             this.buttonDatHang.Name = "buttonDatHang";
             this.buttonDatHang.Size = new System.Drawing.Size(134, 46);
             this.buttonDatHang.TabIndex = 19;
@@ -312,6 +313,7 @@ namespace ADB1_5_DATH2
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.buttonXemDGH);
             this.groupBox3.Controls.Add(this.dataGridViewXemTimSP);
             this.groupBox3.Controls.Add(this.buttonXemSP);
             this.groupBox3.Controls.Add(this.buttonTimKiem);
@@ -327,11 +329,11 @@ namespace ADB1_5_DATH2
             // 
             this.dataGridViewXemTimSP.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridViewXemTimSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewXemTimSP.Location = new System.Drawing.Point(6, 87);
+            this.dataGridViewXemTimSP.Location = new System.Drawing.Point(173, 29);
             this.dataGridViewXemTimSP.Name = "dataGridViewXemTimSP";
             this.dataGridViewXemTimSP.RowHeadersWidth = 51;
             this.dataGridViewXemTimSP.RowTemplate.Height = 24;
-            this.dataGridViewXemTimSP.Size = new System.Drawing.Size(541, 149);
+            this.dataGridViewXemTimSP.Size = new System.Drawing.Size(374, 207);
             this.dataGridViewXemTimSP.TabIndex = 20;
             // 
             // buttonXemSP
@@ -339,11 +341,11 @@ namespace ADB1_5_DATH2
             this.buttonXemSP.BackColor = System.Drawing.Color.SkyBlue;
             this.buttonXemSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXemSP.ForeColor = System.Drawing.Color.Navy;
-            this.buttonXemSP.Location = new System.Drawing.Point(277, 35);
+            this.buttonXemSP.Location = new System.Drawing.Point(22, 103);
             this.buttonXemSP.Name = "buttonXemSP";
-            this.buttonXemSP.Size = new System.Drawing.Size(184, 46);
+            this.buttonXemSP.Size = new System.Drawing.Size(134, 46);
             this.buttonXemSP.TabIndex = 19;
-            this.buttonXemSP.Text = "Xem sản phẩm";
+            this.buttonXemSP.Text = "Xem SP";
             this.buttonXemSP.UseVisualStyleBackColor = false;
             this.buttonXemSP.Click += new System.EventHandler(this.buttonXemSP_Click);
             // 
@@ -352,7 +354,7 @@ namespace ADB1_5_DATH2
             this.buttonTimKiem.BackColor = System.Drawing.Color.SkyBlue;
             this.buttonTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTimKiem.ForeColor = System.Drawing.Color.Navy;
-            this.buttonTimKiem.Location = new System.Drawing.Point(49, 35);
+            this.buttonTimKiem.Location = new System.Drawing.Point(22, 35);
             this.buttonTimKiem.Name = "buttonTimKiem";
             this.buttonTimKiem.Size = new System.Drawing.Size(134, 46);
             this.buttonTimKiem.TabIndex = 18;
@@ -389,6 +391,19 @@ namespace ADB1_5_DATH2
             this.buttonThemSP.Text = "Thêm sản phẩm";
             this.buttonThemSP.UseVisualStyleBackColor = false;
             this.buttonThemSP.Click += new System.EventHandler(this.buttonThemSP_Click);
+            // 
+            // buttonXemDGH
+            // 
+            this.buttonXemDGH.BackColor = System.Drawing.Color.SkyBlue;
+            this.buttonXemDGH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXemDGH.ForeColor = System.Drawing.Color.Navy;
+            this.buttonXemDGH.Location = new System.Drawing.Point(22, 171);
+            this.buttonXemDGH.Name = "buttonXemDGH";
+            this.buttonXemDGH.Size = new System.Drawing.Size(134, 46);
+            this.buttonXemDGH.TabIndex = 21;
+            this.buttonXemDGH.Text = "Xem DGH";
+            this.buttonXemDGH.UseVisualStyleBackColor = false;
+            this.buttonXemDGH.Click += new System.EventHandler(this.buttonXemDGH_Click);
             // 
             // KhachHang
             // 
@@ -448,5 +463,6 @@ namespace ADB1_5_DATH2
         private System.Windows.Forms.Button buttonThemSP;
         private System.Windows.Forms.DataGridView dataGridViewCTDH;
         private System.Windows.Forms.Button buttonDatHang;
+        private System.Windows.Forms.Button buttonXemDGH;
     }
 }
